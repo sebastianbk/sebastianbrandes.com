@@ -1,30 +1,35 @@
-			<!-- footer -->
-			<footer class="footer" role="contentinfo">
-
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
-
-			</footer>
-			<!-- /footer -->
-
-		</div>
-		<!-- /wrapper -->
+		<!-- footer -->
+		<footer class="container" role="contentinfo">
+			<div class="row">
+			<!-- copyright -->
+			<div class="col-lg-12">
+				<?php
+					wp_nav_menu(
+					array(
+						'theme_location'  => 'header-menu',
+						'echo'            => true,
+						'fallback_cb'     => 'wp_page_menu',
+						'before'          => '',
+						'after'           => '',
+						'link_before'     => '',
+						'link_after'      => '',
+						'items_wrap'      => '<ul class="list-unstyled"><li class="pull-right"><a href="#top">Back to top</a></li>%3$s</ul>',
+						'depth'           => 0,
+						'walker'          => ''
+						)
+					);
+					?>
+				<p>Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. <?php _e('Powered by', 'sebastianbrandes'); ?>
+				<a href="//wordpress.org" title="WordPress">WordPress</a> and a modified edition of <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.</p>
+				<p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
+			</div>
+			<!-- /copyright -->
+			</div>
+		</footer>
+		<!-- /footer -->
 
 		<?php wp_footer(); ?>
-
-		<!-- analytics -->
-		<script>
-		(function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
-		(f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
-		l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
-		ga('send', 'pageview');
-		</script>
-
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</body>
 </html>
