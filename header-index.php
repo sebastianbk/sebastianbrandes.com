@@ -41,7 +41,7 @@
 						<h4 class="modal-title">Sebastian's Graduate Diploma</h4>
 					</div>
 					<div class="modal-body">
-						<a href="<?php echo get_template_directory_uri(); ?>/img/sb_diploma.jpg"><img src="<?php echo get_template_directory_uri(); ?>/img/sb_diploma.jpg" /></a>
+						<a href="<?php echo get_template_directory_uri(); ?>/img/sb_diploma.jpg"><img src="<?php echo get_template_directory_uri(); ?>/img/sb_diploma.jpg" alt="Sebastian's Graduate Diploma" /></a>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

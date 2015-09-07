@@ -34,6 +34,10 @@
 			$("#diploma").modal('show');
 		});
 		
+		$("#wp-caption").addClass("panel panel-default");
+		$("#wp-caption").children().first().wrap("<div class='panel-body'></div>");
+		$("#wp-caption-text").addClass("panel-footer");
+		
 	});
 	
 })(jQuery, this);

@@ -75,7 +75,7 @@ function sebastianbrandes_styles()
     wp_register_style('readablecustom', get_template_directory_uri() . '/css/custom.min.css', array(), '3.3.5', 'all');
     wp_enqueue_style('readablecustom'); // Enqueue it!
     
-    wp_register_style('customstyle', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
+    wp_register_style('customstyle', get_template_directory_uri() . '/style.css', array(), '1.0.1', 'all');
     wp_enqueue_style('customstyle'); // Enqueue it!
 }
 

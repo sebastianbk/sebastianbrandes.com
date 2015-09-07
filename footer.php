@@ -1,5 +1,5 @@
 		<!-- footer -->
-		<footer class="container" role="contentinfo">
+		<footer class="container">
 			<div class="row">
 			<!-- copyright -->
 			<div class="col-lg-12">

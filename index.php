@@ -1,6 +1,6 @@
 <?php get_template_part('header-index'); ?>
 
-	<main role="main">
+	<main>
 		<!-- section -->
 		<section>
 
