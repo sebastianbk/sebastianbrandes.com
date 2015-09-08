@@ -2,7 +2,7 @@
 	Theme Name: Sebastian Brandes
 	Theme URI: https://sebastianbrandes.com
 	Description: The theme for Sebastian Brandes' personal blog.
-	Version: 1.0.1
+	Version: 1.0.2
 	Author: Sebastian Brandes
 	Author URI: https://sebastianbrandes.com
 */
@@ -23,6 +23,7 @@ a, a:active, a:visited, a:hover {
 
 #banner-bg {
 	background: url(img/sb_blog_banner.jpg) no-repeat center center;
+	background-size: cover;
 	min-height: 400px;
 }
 
@@ -55,6 +56,34 @@ a, a:active, a:visited, a:hover {
 	background: rgba(255, 255, 255, 0.5);
 }
 
+#post-header-bg {
+	box-shadow: inset 0 0 5em 1em #000;
+	min-height: 300px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#post-header-bg .shadow {
+	color: #fff !important;
+	text-shadow: 0px 0px 10px #000000;
+}
+
+#post-header {
+	border-bottom: medium none !important;
+}
+
+@media (max-width: 767px) {
+	#post-header {
+		margin-bottom: 2em !important;
+		text-align: center !important;
+	}
+}
+
+main {
+	margin-top: 15px;
+}
+
 .row.white {
 	background-color: #fff;
 	padding-bottom: 2em;
@@ -62,6 +91,10 @@ a, a:active, a:visited, a:hover {
 
 p.form-submit {
 	text-align: right;
+}
+
+.comment-body {
+	overflow: auto;
 }
 
 .comments ul {
@@ -79,4 +112,42 @@ p.form-submit {
 #diploma img {
 	width: 100%;
 	height: auto;
+}
+
+.article-content {
+	overflow: auto;
+}
+
+article img {
+	max-width: 100%;
+	height: auto;
+}
+
+article img.aligncenter {
+	display: block;
+	margin: 0 auto;
+}
+
+article img.alignleft {
+	float: left;
+	margin-right: 20px;
+}
+
+article img.alignright {
+	float: right;
+	margin-left: 20px;
+}
+
+article img.alignnone {
+	float: none;
+}
+
+.wp-caption.panel {
+	width: auto !important;
+	display: inline-block !important;
+	max-width: 100% !important;
+}
+
+.wp-caption-text.panel-footer {
+	margin: 0 !important;
 }

@@ -21,7 +21,7 @@
 		// $(".comment-meta a:first-child").addClass("btn btn-default btn-xs disabled");
 		
 		$(".comments").find('.comment-meta').replaceWith(function() {
-			return '<p><small class="comment-meta commentmetadata">' + $(this).html() + '</small></p>';
+			return '<div class="well well-sm pull-right"><small class="comment-meta commentmetadata">' + $(this).html() + '</small></div>';
 		});
 		
 		$(".comment-reply-link").addClass("btn btn-info btn-xs");
@@ -35,7 +35,9 @@
 		});
 		
 		$(".wp-caption").addClass("panel panel-default");
-		$(".wp-caption").children().first().wrap("<div class='panel-body'></div>");
+		$.each($("article").find(".wp-caption"), function (key, value) {
+			$(value).children().first().wrap("<div class='panel-body'></div>");
+		});
 		$(".wp-caption-text").addClass("panel-footer");
 		
 	});

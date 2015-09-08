@@ -1,10 +1,26 @@
-<?php get_header(); ?>
+<?php get_template_part('header-core'); ?>
+
+		<div class="container-fluid" id="post-header-bg"
+			style="background-image: url(<?php echo get_template_directory_uri() . '/img/archive_header.jpg'; ?>);">
+			<div class="container">
+			<div class="page-header" id="post-header">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12">
+						<h1 class="shadow">Archives</h1>
+						<p class="lead shadow"><?php single_month_title(' '); ?> </p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row white">
+				<div class="col-md-9 col-sm-8">
 
 	<main>
 		<!-- section -->
 		<section>
-
-			<h1><?php _e( 'Archives', 'sebastianbrandes' ); ?></h1>
 
 			<?php get_template_part('loop'); ?>
 

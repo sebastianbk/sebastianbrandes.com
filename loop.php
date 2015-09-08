@@ -13,7 +13,7 @@
 		<p>
 			<small>
 				<?php _e( 'Published by', 'sebastianbrandes' ); ?> <?php the_author_posts_link(); ?> on <?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?> &mdash;
-				<?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'sebastianbrandes' ), __( '1 Comment', 'sebastianbrandes' ), __( '% Comments', 'sebastianbrandes' )); ?>
+				<?php if (comments_open( get_the_ID() ) ) { comments_popup_link( __( 'Leave your thoughts', 'sebastianbrandes' ), __( '1 Comment', 'sebastianbrandes' ), __( '% Comments', 'sebastianbrandes' )); } else { echo 'No Comments'; } ?>
 			</small>
 		</p>
 		<!-- /post details -->
